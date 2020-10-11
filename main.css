@@ -11,7 +11,7 @@ body {
 
 .container {
   height: 100vh;
-  background: #3e2c4e;
+  background: #5b3f74;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #373041, #644b7c);
   /* Chrome 10-25, Safari 5.1-6 */
@@ -41,9 +41,9 @@ body {
   top: 350px;
   right: 120px;
   text-decoration: none;
-  background: #644b7c;
+  background: #1e56a0;
   color: #fff;
-  padding: 5px 10px;
+  padding: 10px 18px;
   border-radius: 10px;
   font-size: 1.2rem;
   align-items: center;
@@ -51,7 +51,7 @@ body {
   opacity: 0.9; }
 
 .poster-btn:hover {
-  background: #373041; }
+  background: #299ace;  }
 
 .poster-title {
   background: transparent;
@@ -96,18 +96,24 @@ body {
   margin: 10px auto; }
 
 .form-container button {
-  padding: 5px 10px;
-  margin: 15px auto;
+  padding: 10px 18px;
+  margin: 25px auto;
   width: 97%;
   font-size: 1.2rem;
-  background: #373041;
+  background: #1e56a0;
   border: none;
   border-radius: 10px;
   color: #fff;
   cursor: pointer; }
 
+#form h3 {
+  color: #fff;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
 .form-container button:hover {
-  background: #655177; }
+  background: #299ace; }
 
 .form-container button:focus {
   outline: none; }

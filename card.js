@@ -16,6 +16,8 @@ if (localStorage.getItem('user') !== null) {
     welcomeTitle.style.color = '#fff'
 }
 
+
+// Typing effect on the story synopsis
 let i = 0;
 let txt = 'Zendikar calls. A quest awaits. Gather your adventuring party and prepare for perilous challenges and priceless rewards.';
 let speed = 20; /* The speed/duration of the effect in milliseconds */
@@ -44,7 +46,7 @@ const renderCards = async () => {
         black: '#000',
         blue: '#408DCE',
         green: '#45CE40',
-        red: '#D33434'
+        red: '#CA291E'
     }
 
     //Get the card color and use it for the border
