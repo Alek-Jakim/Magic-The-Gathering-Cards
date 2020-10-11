@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./card.css">
+    <title>Magic: The Gathering | Cards</title>
+</head>
+
+<body>
+    <!--Hello + User Input from homes.html page-->
+    <header>
+        <h1 id="title"></h1>
+    </header>
+
+    <!--Search cards by name-->
+    <div class="card-search">
+        <input type="text" placeholder="Search Cards..." id="search-bar" />
+    </div>
+
+    <!--Filter Cards By Color-->
+    <div class="select-filter">
+        <div class="color-filter">
+            <select name="card-color" id="select-color" class="color-menu">
+                <option selected value="Filter cards by color">Filter cards by color</option>
+                <option value="White">White</option>
+                <option value="Black">Black</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Colorless">Colorless</option>
+            </select>
+        </div>
+        <div class="sort-filter">
+            <select name="card-sort" id="select-sort" class="sort-menu">
+                <option selected>Sort cards alphabetically</option>
+                <option value="Ascending">Ascending</option>
+                <option value="Descending">Descending</option>
+            </select>
+        </div>
+        <div class="type-filter">
+            <select name="card-type" id="select-type" class="type-menu">
+                <option selected value="Filter cards by type">Filter cards by type</option>
+                <option value="Artifact">Artifact</option>
+                <option value="Autobot">Autobot</option>
+                <option value="Character">Character</option>
+                <option value="Conspiracy">Conspiracy</option>
+                <option value="Creature">Creature</option>
+                <option value="Dragon">Dragon</option>
+                <option value="Elemental">Elemental</option>
+                <option value="Enchantment">Enchantment</option>
+                <option value="Goblin">Goblin</option>
+                <option value="Hero">Hero</option>
+                <option value="Instant">Instant</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Knights">Knights</option>
+                <option value="Land">Land</option>
+                <option value="Phenomenon">Phenomenon</option>
+                <option value="Plane">Plane</option>
+                <option value="Planeswalker">Planeswalker</option>
+                <option value="Scheme">Scheme</option>
+                <option value="Sorcery">Sorcery</option>
+                <option value="Specter">Specter</option>
+                <option value="Summon">Summon</option>
+                <option value="Tribal">Tribal</option>
+                <option value="Vanguard">Vanguard</option>
+                <option value="Wolf">Wolf</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="spinner">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="msg-container"></div>
+
+    <div class="flex-card-container">
+        <div class="card-container">
+        </div>
+    </div>
+
+
+    <script src='./card.js'></script>
+</body>
+
+</html>
