@@ -18,7 +18,7 @@ if (localStorage.getItem('user') !== null) {
 
 let i = 0;
 let txt = 'Zendikar calls. A quest awaits. Gather your adventuring party and prepare for perilous challenges and priceless rewards.';
-let speed = 50; /* The speed/duration of the effect in milliseconds */
+let speed = 20; /* The speed/duration of the effect in milliseconds */
 
 function storyTyping() {
     if (i < txt.length) {
@@ -71,7 +71,7 @@ const renderCards = async () => {
         <div class="flip-card" id="card-element">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                <img src=${!card.imageUrl ? frontCardUrl : card.imageUrl} style="width:300px;height:400px;" />
+                <img src=${!card.imageUrl ? frontCardUrl : card.imageUrl} style="width:300px;height:400px; border-radius: 17px; border: 2px solid ${getColor(card.colors[0])};" />
             </div>
             <div class="flip-card-back">
             <div class="card-back" style="border: 6px solid ${getColor(card.colors[0])};">

@@ -40,6 +40,7 @@ body {
 /*Card Rotation Effect*/
 .flip-card {
   background-color: transparent;
+  border-radius: 5px;
   width: 300px;
   height: 400px;
   perspective: 1000px;
@@ -69,10 +70,12 @@ body {
 
 .flip-card-front {
   background-color: #bbb;
+  border-radius: 15px;
   color: black; }
 
 .flip-card-back {
-  background-color: #231f29;
+  border-radius: 17px;
+  background-color: #3d2d53;
   color: white;
   transform: rotateY(180deg);
   display: flex;
@@ -80,6 +83,7 @@ body {
   justify-content: center; }
 
 .card-back {
+  border-radius: 17px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

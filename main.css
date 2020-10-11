@@ -66,6 +66,8 @@ body {
   margin: auto; }
 
 .form-container {
+  display: flex;
+  justify-content: center;
   padding: 10px 15px;
   background: rgba(83, 83, 83, 0.2);
   width: 350px;
@@ -74,11 +76,7 @@ body {
   -moz-box-shadow: 19px 0px 50px -17px rgba(0, 0, 0, 0.75);
   box-shadow: 19px 0px 50px -17px rgba(0, 0, 0, 0.75); }
 
-.form-container label {
-  text-align: center;
-  font-size: 2.40rem;
-  margin-top: 4rem;
-  color: #fff; }
+
 
 .form-container input {
   border: none;
