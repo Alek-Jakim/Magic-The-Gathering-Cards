@@ -23,8 +23,12 @@ Clicking on the "View More" button redirects you to the offical Magic: The Gathe
 ### Cards Page
 Cards are loaded after several seconds. You can search cards manually, filter them by color, type, alphabetically.
 
-Hovering over the cards reveals information about them. The border color, as well as the card name indicate the card's color. There are also colorless cards.
+Hovering over the cards reveals information about them. The border color, as well as the card name indicate the card's color. Cards without a border color are considered colorless cards and I've added a filter for them as well.
 
 Since only 100 cards are loaded, not all card types will be available. Refreshing the page generates new cards (and card types).
 
 **Responsive Media Queries Added**
+
+Tools Used:
+* HTML & CSS (no framework)
+* Vanilla JavaScript
