@@ -42,7 +42,7 @@
 }
 
 
-@media(min-width: 320px){
+/* @media(min-width: 320px){
 
     .ad-container {
         position: relative;
@@ -93,10 +93,11 @@
     .card-container {
         display: flex;
         flex-direction: column;
+        background: #2b1f36;
     }
 
     .flip-card {
         width: 300px;
         height: 400px;
     }
-}
+} 
