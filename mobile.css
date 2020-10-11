@@ -23,6 +23,10 @@
         height: 350px;
     }
 
+    .form-container {
+        height: 300px;
+    }
+
     .ad-container {
         display: relative;
     }
