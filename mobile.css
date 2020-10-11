@@ -9,21 +9,19 @@
         flex-direction: column;
         height: 100vh;
         margin: 20px;
+        background: #3e2c4e;
     }
 
     .ad-container,
     .form-container {
         width: 100%;
         overflow: hidden;
+        width: 300px;
+        height: 350px;
     }
 
     .ad-container {
         display: relative;
-    }
-
-    .ad-container img {
-        width: 350px;
-        height: 450px;
     }
 
     .ad-container a {
