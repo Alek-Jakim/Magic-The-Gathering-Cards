@@ -9,11 +9,26 @@ const sortAlphabetically = document.getElementById('select-sort');
 
 
 
+
 //Get User Input in home.html from Local Storage
 if (localStorage.getItem('user') !== null) {
     welcomeTitle.textContent = `Welcome ${localStorage.getItem('user')}!`
     welcomeTitle.style.color = '#fff'
 }
+
+let i = 0;
+let txt = 'Zendikar calls. A quest awaits. Gather your adventuring party and prepare for perilous challenges and priceless rewards.';
+let speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function storyTyping() {
+    if (i < txt.length) {
+        document.querySelector(".story-title").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(storyTyping, speed);
+    }
+}
+
+
 
 //Main Function fetching the card data, all other functions are nested inside this one :)
 const renderCards = async () => {
@@ -170,3 +185,4 @@ const renderCards = async () => {
 }
 
 renderCards();
+storyTyping();

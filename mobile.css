@@ -100,4 +100,10 @@
         width: 300px;
         height: 400px;
     }
+
+    .story-title {
+        line-height: 1;
+        font-size: 1.3rem;
+        margin: 0;
+    }
 } 
