@@ -31,6 +31,10 @@
         display: relative;
     }
 
+    .ad-container img {
+        width: 100%;
+    }
+
     .poster-btn {
         position: absolute;
         width: 200px;
