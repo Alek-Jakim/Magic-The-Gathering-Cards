@@ -56,14 +56,14 @@ const renderCards = async () => {
         <div class="flip-card" id="card-element">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                <img src=${card.imageUrl ? card.imageUrl : frontCardUrl} style="width:300px;height:400px;" />
+                <img src=${!card.imageUrl ? frontCardUrl : card.imageUrl} style="width:300px;height:400px;" />
             </div>
             <div class="flip-card-back">
             <div class="card-back" style="border: 6px solid ${getColor(card.colors[0])};">
                 <h3>Card Name: <span class="card-span" style="color: ${getColor(card.colors[0])};">${card.name}</span></h3>
                 <p>Card Type: <span class="card-span">${card.types[0]}</span></p>
                 <p>Card Set: <span class="card-span">${card.setName}</span></p>
-                <p style="font-size: 0.9rem;"><span class="card-span">${card.text}</span></p>
+                <p style="font-size: 0.9rem;"><span class="card-span">${!card.text ? '' : card.text}</span></p>
                 <small>#${card.number}</small>
             </div>
             </div>
