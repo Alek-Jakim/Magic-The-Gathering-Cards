@@ -40,7 +40,6 @@ body {
   background-color: transparent;
   width: 300px;
   height: 400px;
-  border: 1px solid #4e4e4e;
   perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
   -webkit-box-shadow: 3px -3px 61px -12px rgba(0, 0, 0, 0.75);
