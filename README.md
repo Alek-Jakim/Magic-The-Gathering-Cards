@@ -32,3 +32,5 @@ Since only 100 cards are loaded, not all card types will be available. Refreshin
 Tools Used:
 * HTML & CSS (no framework)
 * Vanilla JavaScript
+
+**Note:** I started off using Sass but ultimately decided I didn't need it for this project. :)
