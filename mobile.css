@@ -3,14 +3,16 @@
 
     body {
         background: #3e2c4e;
+        height: 100vh;
     }
 
     .container {
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        margin: 20px;
+        height: 100%;
+        width: 100%;
         background: #3e2c4e;
+        margin-bottom: 30px;
     }
 
     .ad-container,
@@ -25,44 +27,28 @@
         display: relative;
     }
 
-    .ad-container a {
-        display: absolute;
+    .poster-btn {
+        position: absolute;
+        width: 200px;
+        left: 50px;
         top: 80%;
     }
 
-    #form label {
-        font-size: 1.4rem;
+    #form h3 {
+        font-size: 1.1rem;
+        margin: 0 auto;
+    }
+
+    #form input {
+        font-size: 1.1rem;
+    }
+
+    #btn-submit {
+        margin-bottom: 13rem;
+        font-size: 1.3rem;
     }
 }
 
-@media(min-width: 400px){
-    .ad-container img{
-        width: 100%;
-    }
-}
-
-
-/* @media(min-width: 320px){
-
-    .ad-container {
-        position: relative;
-    }
-
-    .ad-container img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .ad-container a {
-        position: absolute;
-        left: 0%;
-        width: 100%;
-    }
-
-    #form label {
-        font-size: 2rem;
-    }
-}
 
 
 /*Card Page*/
