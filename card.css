@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -83,9 +85,15 @@ body {
   justify-content: space-evenly;
   height: 100%; }
 
+.card-span {
+  font-family: 'Sansita Swashed', cursive;
+}
+
 .flip-card-back h3, p {
   font-size: 1.3rem;
-  padding: 0 8px; }
+  padding: 5px 25px; 
+
+}
 
 .flip-card-back small {
   position: absolute;
@@ -99,7 +107,7 @@ header h1 {
   font-size: 3rem;
   align-items: center;
   text-align: center;
-  margin-top: 2rem; }
+  margin: 4rem 0; }
 
 /*Search Bar*/
 .card-search {

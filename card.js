@@ -11,7 +11,7 @@ const sortAlphabetically = document.getElementById('select-sort');
 
 //Get User Input in home.html from Local Storage
 if (localStorage.getItem('user') !== null) {
-    welcomeTitle.textContent = 'Hello ' + localStorage.getItem('user') + '!';
+    welcomeTitle.textContent = `Welcome ${localStorage.getItem('user')}!`
     welcomeTitle.style.color = '#fff'
 }
 
@@ -26,7 +26,7 @@ const renderCards = async () => {
     // Set the border color depending on the card's color
     const cardColor = {
         white: '#EAEAEA',
-        black: '#191919',
+        black: '#000',
         blue: '#408DCE',
         green: '#45CE40',
         red: '#D33434'
@@ -59,11 +59,11 @@ const renderCards = async () => {
                 <img src=${card.imageUrl ? card.imageUrl : frontCardUrl} style="width:300px;height:400px;" />
             </div>
             <div class="flip-card-back">
-            <div class="card-back" style="border: 6px solid ${getColor(card.colors[0])} ;">
-                <h3>Card Name: ${card.name}</h3>
-                <p>Card Type: ${card.types[0]}</p>
-                <p>Card Set: ${card.setName}</p>
-                <p style="font-size: 0.9rem;">${card.text}</p>
+            <div class="card-back" style="border: 6px solid ${getColor(card.colors[0])};">
+                <h3>Card Name: <span class="card-span" style="color: ${getColor(card.colors[0])};">${card.name}</span></h3>
+                <p>Card Type: <span class="card-span">${card.types[0]}</span></p>
+                <p>Card Set: <span class="card-span">${card.setName}</span></p>
+                <p style="font-size: 0.9rem;"><span class="card-span">${card.text}</span></p>
                 <small>#${card.number}</small>
             </div>
             </div>
@@ -96,9 +96,13 @@ const renderCards = async () => {
     const selectByColor = (e) => {
         let colorSelected = e.target.value;
         cardDataContainer.innerHTML = '';
-        let colorArr = cardArr.filter(card => card.colors[0] === colorSelected)
-
+        let colorArr = cardArr.filter(card => card.colors[0] === colorSelected);
+        let colorlessArr = cardArr.filter(card => card.colors[0] === undefined);
         generateCards(colorArr);
+
+        if (colorSelected === 'Colorless') {
+            generateCards(colorlessArr);
+        }
         if (colorSelected === 'Filter cards by color') {
             generateCards(cardArr);
         }
