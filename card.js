@@ -16,7 +16,7 @@ if (localStorage.getItem('user') !== null) {
 }
 
 //Main Function fetching the card data, all other functions are nested inside this one :)
-const fetchData = async () => {
+const renderCards = async () => {
     // Fetching data from API and creating an array
     const res = await fetch(`https://api.magicthegathering.io/v1/cards?random=true&pageSize=100&language=English`);
     const data = await res.json();
@@ -165,4 +165,4 @@ const fetchData = async () => {
     spinner.style.display = 'none';
 }
 
-fetchData();
+renderCards();
