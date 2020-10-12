@@ -30,7 +30,7 @@ Since only 100 cards are loaded, not all card types will be available. Refreshin
 **Responsive Media Queries Added**
 
 Tools Used:
-* HTML & CSS (no framework)
+* HTML & CSS (no libraries or frameworks)
 * Vanilla JavaScript
 
 **Note:** I started off using Sass but ultimately decided I didn't need it for this project. :)
