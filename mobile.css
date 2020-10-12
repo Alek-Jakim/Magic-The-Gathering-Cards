@@ -9,11 +9,11 @@
     .container {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         height: 100%;
         width: 100%;
         background: #3e2c4e;
-        margin-bottom: 30px;
+        margin: 30px 0;
     }
 
     .ad-container,
