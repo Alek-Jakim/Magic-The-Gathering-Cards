@@ -68,21 +68,33 @@
     }
 
     header h1 {
+        justify-content: flex-start;
         font-size: 2.5rem;
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     .card-search input {
-        width: 70%;
+        width: 85%;
         margin-top: 2rem;
     }
 
     .select-filter {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 100%;
         margin: 0 3rem;
         margin-top: 3rem;
+    }
+
+    .color-filter,
+    .sort-filter,
+    .type-filter {
+        margin-top: 5px;
+    }
+
+    .spinner {
+       margin-top: 3rem;
     }
 
     .card-container {
@@ -100,5 +112,11 @@
         line-height: 1;
         font-size: 1.3rem;
         margin: 0;
+    }
+
+    .msg-container {
+        font-size: 1.8rem;
+        margin: 2rem auto;
+        width: 90%;
     }
 } 
