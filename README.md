@@ -34,3 +34,5 @@ Tools Used:
 * Vanilla JavaScript
 
 **Note:** I started off using Sass but ultimately decided I didn't need it for this project. :)
+
+Deployed on Netlify: https://magic-thegathering.netlify.app/home.html?fbclid=IwAR3jmUGVzFlt3vDNjt-mG1D2es1dDXJTOBGREfJSPxSth2c7t9vvaxQJbAU
